@@ -23,4 +23,10 @@ Ph_no int,
 foreign key(stud_id) references student(stud_id),
 primary key(stud_id,Ph_no));
 
+create table faculty(
+Faculty_id varchar(50) primary key not null,
+Fname varchar(50));
+
+
+
 
