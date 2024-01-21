@@ -11,3 +11,11 @@ Email varchar(100),
 Password varchar(45),
 primary key(StudentID)
 );
+
+create table Dependent(
+StudentID int,
+Name varchar(200),
+PhoneNo varchar(10),
+Relationship varchar(100),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
