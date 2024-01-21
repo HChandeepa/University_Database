@@ -67,3 +67,10 @@ Foreign key(DepartmentID)REFERENCES Department(DepartmentID),
 Foreign key(EmpID)REFERENCES Person(EmpID)
 );
 
+create table Admin(
+EmpID int not null,
+OT int,
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
+
+
