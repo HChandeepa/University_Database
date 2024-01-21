@@ -19,3 +19,10 @@ PhoneNo varchar(10),
 Relationship varchar(100),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
+
+create table PhoneNo(
+StudentID int,
+PhoneNo varchar(10),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Primary key(StudentID,PhoneNo)
+);
