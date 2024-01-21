@@ -26,3 +26,9 @@ PhoneNo varchar(10),
 Foreign key(StudentID)REFERENCES Student(StudentID),
 Primary key(StudentID,PhoneNo)
 );
+
+create table Faculty(
+FacultyID varchar(10) not null,
+Fname varchar(50),
+Primary key(FacultyID)
+);
