@@ -32,3 +32,12 @@ FacultyID varchar(10) not null,
 Fname varchar(50),
 Primary key(FacultyID)
 );
+
+create table Department(
+DepartmentID int not null,
+DepName varchar(50),
+FacultyID varchar(10),
+Primary key(DepartmentID),
+Foreign key(FacultyID)REFERENCES Faculty(FacultyID)
+);
+
