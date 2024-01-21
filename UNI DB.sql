@@ -58,3 +58,12 @@ Password varchar(45),
 Primary key(EmpID)
 );
 
+create table Lecturer(
+EmpID int not null,
+Qualification varchar(200),
+DepartmentID int,
+Primary key(EmpID),
+Foreign key(DepartmentID)REFERENCES Department(DepartmentID),
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
+
