@@ -41,3 +41,13 @@ Primary key(DepartmentID),
 Foreign key(FacultyID)REFERENCES Faculty(FacultyID)
 );
 
+create table Degree(
+DegreeID int not null,
+Dname varchar(50),
+Dtype varchar(20),
+DepartmentID int,
+Primary key(DegreeID),
+Foreign key(DepartmentID)REFERENCES Department(DepartmentID)
+);
+
+
