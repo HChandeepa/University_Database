@@ -121,5 +121,12 @@ Foreign key(StudentID)REFERENCES Student(StudentID),
 Foreign key(TransID)REFERENCES AccountDetails(TransID)
 );
 
+create table AccountDetails(
+TransID int not null,
+StudentID int,
+AccountNo varchar(20),
+Primary key(TransID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
 
 
