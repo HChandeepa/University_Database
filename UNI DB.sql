@@ -99,4 +99,13 @@ Primary key(StudentID),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
 
+create table Attendence(
+StudentID int not null,
+ModuleID int not null,
+AttendDate varchar(20),
+Primary key(StudentID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
 
