@@ -82,4 +82,13 @@ Primary key(ModuleID),
 Foreign key(EmpID)REFERENCES Lecturer(EmpID)
 );
 
+create table PersonAccess(
+StudentID int not null,
+EmpID int not null,
+AccessTime varchar(20),
+Primary key(StudentID,EmpID),
+Foreign key(EmpID)REFERENCES Person(EmpID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
 
