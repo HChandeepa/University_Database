@@ -108,4 +108,18 @@ Foreign key(ModuleID)REFERENCES Module(ModuleID),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
 
+create table Payment(
+PayID int not null,
+StudentID int not null,
+PostDate varchar(20),
+Amount float,
+TransID int,
+RecNo int,
+PaymentType varchar(40),
+Primary key(PayID,StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(TransID)REFERENCES AccountDetails(TransID)
+);
+
+
 
