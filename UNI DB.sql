@@ -50,4 +50,11 @@ Primary key(DegreeID),
 Foreign key(DepartmentID)REFERENCES Department(DepartmentID)
 );
 
+create table Person(
+EmpID int not null,
+Name varchar(50),
+Email varchar(100),
+Password varchar(45),
+Primary key(EmpID)
+);
 
