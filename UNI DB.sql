@@ -91,4 +91,12 @@ Foreign key(EmpID)REFERENCES Person(EmpID),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
 
+create table AccessValidity(
+StudentID int not null,
+Status varchar(20),
+PayStatus varchar(20),
+Primary key(StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
 
