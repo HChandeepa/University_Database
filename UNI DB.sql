@@ -73,4 +73,13 @@ OT int,
 Foreign key(EmpID)REFERENCES Person(EmpID)
 );
 
+create table Module(
+ModuleID int not null,
+ModuleName varchar(200),
+Semester varchar(20),
+EmpID int,
+Primary key(ModuleID),
+Foreign key(EmpID)REFERENCES Lecturer(EmpID)
+);
+
 
