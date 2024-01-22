@@ -349,3 +349,16 @@ INSERT INTO PhoneNo (StudentID, PhoneNo) VALUES
 (9, '6667778888'),
 (10, '2223334444');
 
+--Access_Validity
+insert into AccessValidity
+values
+  (1, 'Active', 'Paid'),
+  (2, 'Active', 'Not Paid'),
+  (4, 'Active', 'Paid'),
+  (7, 'Deactive', 'Not Paid'),
+  (8, 'Active', 'Paid'),
+  (9, 'Deactive', 'Not Paid'),
+  (10, 'Active', 'Paid'),
+  (12, 'Deactive', 'Not Paid');
+
+
