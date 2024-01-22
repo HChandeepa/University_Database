@@ -507,3 +507,11 @@ as
 begin
 	select Name,NIC,Address,DOB,Email from Student
 	end;
+
+create trigger student_update
+on Student after update
+as
+begin
+	select StudentID,Name,NIC,Address,DOB,Email from Student
+	end;
+
