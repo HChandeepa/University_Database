@@ -32,3 +32,136 @@ FacultyID varchar(10) not null,
 Fname varchar(50),
 Primary key(FacultyID)
 );
+
+create table Department(
+DepartmentID int not null,
+DepName varchar(50),
+FacultyID varchar(10),
+Primary key(DepartmentID),
+Foreign key(FacultyID)REFERENCES Faculty(FacultyID)
+);
+
+create table Degree(
+DegreeID int not null,
+Dname varchar(50),
+Dtype varchar(20),
+DepartmentID int,
+Primary key(DegreeID),
+Foreign key(DepartmentID)REFERENCES Department(DepartmentID)
+);
+
+create table Person(
+EmpID int not null,
+Name varchar(50),
+Email varchar(100),
+Password varchar(45),
+Primary key(EmpID)
+);
+
+create table Lecturer(
+EmpID int not null,
+Qualification varchar(200),
+DepartmentID int,
+Primary key(EmpID),
+Foreign key(DepartmentID)REFERENCES Department(DepartmentID),
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
+
+create table Admin(
+EmpID int not null,
+OT int,
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
+
+create table Module(
+ModuleID int not null,
+ModuleName varchar(200),
+Semester varchar(20),
+EmpID int,
+Primary key(ModuleID),
+Foreign key(EmpID)REFERENCES Lecturer(EmpID)
+);
+
+create table PersonAccess(
+StudentID int not null,
+EmpID int not null,
+AccessTime varchar(20),
+Primary key(StudentID,EmpID),
+Foreign key(EmpID)REFERENCES Person(EmpID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
+create table AccessValidity(
+StudentID int not null,
+Status varchar(20),
+PayStatus varchar(20),
+Primary key(StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
+create table Attendence(
+StudentID int not null,
+ModuleID int not null,
+AttendDate varchar(20),
+Primary key(StudentID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
+create table Payment(
+PayID int not null,
+StudentID int not null,
+PostDate varchar(20),
+Amount float,
+TransID int,
+RecNo int,
+PaymentType varchar(40),
+Primary key(PayID,StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(TransID)REFERENCES AccountDetails(TransID)
+);
+
+create table AccountDetails(
+TransID int not null,
+StudentID int,
+AccountNo varchar(20),
+Primary key(TransID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
+
+create table Result(
+StudentID int not null,
+ModuleID int not null,
+Mark float,
+EmpID int,
+Primary key(StudentID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(EmpID)REFERENCES Lecturer(EmpID)
+);
+
+create table DegreeModuleAllocation(
+DegreeID int not null,
+ModuleID int not null,
+Primary key(DegreeID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(DegreeID)REFERENCES Degree(DegreeID),
+);
+
+create table ExamAllocation(
+ExamID int not null,
+ModuleID int not null,
+EmpID int,
+Primary key(ExamID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
+
+create table ExamStudentAllocation(
+ExamID int not null,
+StudentID int not null,
+Participation int,
+Primary key(ExamID,StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(ExamID)REFERENCES ExamAllocation(ExamID)
+);
