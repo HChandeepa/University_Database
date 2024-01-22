@@ -165,3 +165,16 @@ Primary key(ExamID,StudentID),
 Foreign key(StudentID)REFERENCES Student(StudentID),
 Foreign key(ExamID)REFERENCES ExamAllocation(ExamID)
 );
+
+create table Exam(
+StudentID int not null,
+ModuleID int not null,
+ExamDate varchar(20),
+ExamTime varchar(20),
+NumTimeAttended int,
+SeatNo int,
+HallNo varchar(10),
+Primary key(StudentID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(StudentID)REFERENCES Student(StudentID)
+);
