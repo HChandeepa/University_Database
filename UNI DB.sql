@@ -292,3 +292,17 @@ values
   (18, 2),
   (19, 0),
   (20, 2);
+
+--Module
+INSERT INTO Module
+VALUES
+(1, 'Introduction to Programming', '1', 1),
+(2, 'Database Management', '2', 2),
+(3, 'Web Development', '2', 3),
+(4, 'Data Structures and Algorithms', '1', 4),
+(5, 'Artificial Intelligence', '2', 5),
+(6, 'Software Engineering', '1', 6),
+(7, 'Network Security', '1', 7),
+(8, 'Mobile App Development', '2', 8),
+(9, 'Human-Computer Interaction', '1', 9),
+(10, 'Machine Learning', '2', 10);
