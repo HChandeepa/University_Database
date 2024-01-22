@@ -212,3 +212,18 @@ values(1,'Department of Computer and Data Science','FOC'),
 	  (10,'Department of Marketing and Tourism','FOB'),
 	  (11,'Department of Operations and Logistics','FOB'),
 	  (12,'Department of English and Modern Languages','FOB');
+
+--Degree
+insert into Degree
+values(1,'BSC (HONS) COMPUTER SCIENCE','PLYMOUTH',1),
+	  (2,'BSC (HONS) COMPUTER SECURITY','PLYMOUTH',2),
+	  (3,'BSC (HONS) IN SOFTWARE ENGINEERING','PLYMOUTH',3),
+	  (4,'BSC (HONS) TECHNOLOGY MANAGEMENT','PLYMOUTH',4),
+	  (5,'BENG (HONS) CIVIL AND STRUCTURAL ENGINEERING','PLYMOUTH',5),
+	  (6,'BACHELOR OF INTERIOR DESIGN','UGC',6),
+	  (7,'BSC (HONS) PSYCHOLOGY','PLYMOUTH',7),
+	  (8,'BSC (HONS) IN SOFTWARE ENGINEERING','UGC',3),
+	  (9,'BM (HONS) IN ACCOUNTING AND FINANCE','UGC',9),
+	  (10,'BSC (HONS) COMPUTER NETWORKS','UGC',2),
+	  (11,'BSC (HONOURS) IN DATA SCIENCE','PLYMOUTH',1),
+	  (12,'BACHELOR OF INFORMATION TECHNOLOGY ','VICTORIA ',2);
