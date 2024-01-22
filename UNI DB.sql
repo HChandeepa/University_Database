@@ -140,3 +140,10 @@ Foreign key(StudentID)REFERENCES Student(StudentID),
 Foreign key(EmpID)REFERENCES Lecturer(EmpID)
 );
 
+create table DegreeModuleAllocation(
+DegreeID int not null,
+ModuleID int not null,
+Primary key(DegreeID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(DegreeID)REFERENCES Degree(DegreeID),
+);
