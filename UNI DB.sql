@@ -277,3 +277,32 @@ values
   (8, 6, '2024-01-14 14:15:00'), 
   (7, 7, '2024-01-14 15:30:00'), 
   (9, 8, '2024-01-14 16:45:00');
+
+  --Admin
+insert into Admin
+values
+  (10, 1),
+  (11, 0),
+  (12, 1),
+  (13, 1),
+  (14, 1),
+  (15, 0),
+  (16, 3),
+  (17, 0),
+  (18, 2),
+  (19, 0),
+  (20, 2);
+
+--Module
+INSERT INTO Module
+VALUES
+(1, 'Introduction to Programming', '1', 1),
+(2, 'Database Management', '2', 2),
+(3, 'Web Development', '2', 3),
+(4, 'Data Structures and Algorithms', '1', 4),
+(5, 'Artificial Intelligence', '2', 5),
+(6, 'Software Engineering', '1', 6),
+(7, 'Network Security', '1', 7),
+(8, 'Mobile App Development', '2', 8),
+(9, 'Human-Computer Interaction', '1', 9),
+(10, 'Machine Learning', '2', 10);
