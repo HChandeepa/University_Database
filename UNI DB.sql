@@ -417,5 +417,15 @@ INSERT INTO ExamStudentAllocation (ExamID, StudentID, Participation) VALUES
 (3, 9, 0),
 (4, 10, 1);
 
+--AccountDetails
+insert into AccountDetails (TransID, StudentID, AccountNo)
+values
+  (1, 1, '12345678'),
+  (2, 2, '23456789'),
+  (3, 7, '34567890'),
+  (4, 4, '45678901'),
+  (5, 8, '56789012');
+
+
 
 
