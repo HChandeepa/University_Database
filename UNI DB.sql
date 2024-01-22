@@ -391,3 +391,18 @@ VALUES
 
 
 
+--ExamAllocation
+INSERT INTO ExamAllocation (ExamID, ModuleID, EmpID) VALUES
+(1, 1, 1),
+(2, 2, 20),
+(3, 3, 9),
+(4, 4, 4),
+(5, 5, 14),
+(6, 6, 16),
+(7, 7, 11),
+(8, 8, 4),
+(9, 9, 6),
+(10, 10, 13);
+
+
+
