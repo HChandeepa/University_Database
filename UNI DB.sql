@@ -147,3 +147,12 @@ Primary key(DegreeID,ModuleID),
 Foreign key(ModuleID)REFERENCES Module(ModuleID),
 Foreign key(DegreeID)REFERENCES Degree(DegreeID),
 );
+
+create table ExamAllocation(
+ExamID int not null,
+ModuleID int not null,
+EmpID int,
+Primary key(ExamID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(EmpID)REFERENCES Person(EmpID)
+);
