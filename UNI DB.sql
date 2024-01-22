@@ -197,3 +197,18 @@ values('FOC','Faculty of Computing'),
 	  ('FOE','Faculty of Engineering'),
 	  ('FOS','Faculty of Science'),
 	  ('FOP','Faculty of Postgraduate Studies');
+
+--Department
+insert into Department 
+values(1,'Department of Computer and Data Science','FOC'),
+	  (2,'Department of Network and Security','FOC'),
+	  (3,'Department of  Software Engineering','FOC'),
+	  (4,'Department of Information and Systems Sciences','FOC'),
+	  (5,'Department of Mechatronic and Industry Engineering','FOE'),
+	  (6,'Department of Design Studies','FOE'),
+	  (7,'Department of Biomedical Science','FOS'),
+	  (8,'Department of Management','FOB'),
+	  (9,'Department of Accounting and Finance','FOB'),
+	  (10,'Department of Marketing and Tourism','FOB'),
+	  (11,'Department of Operations and Logistics','FOB'),
+	  (12,'Department of English and Modern Languages','FOB');
