@@ -227,3 +227,11 @@ values(1,'BSC (HONS) COMPUTER SCIENCE','PLYMOUTH',1),
 	  (10,'BSC (HONS) COMPUTER NETWORKS','UGC',2),
 	  (11,'BSC (HONOURS) IN DATA SCIENCE','PLYMOUTH',1),
 	  (12,'BACHELOR OF INFORMATION TECHNOLOGY ','VICTORIA ',2);
+
+--Dependent
+INSERT INTO Dependent 
+VALUES(4, 'Johan', '1234567890', 'Father'),
+	  (11, 'Chaminda', '9876543210', 'Father'),
+	  (10, 'Manoja', '5551234567', 'Mother'),
+  	  (8, 'Nayana', '7778889999', 'Mother'),
+	  (13, 'Dhanidu', '4445556666', 'Father');
