@@ -361,4 +361,19 @@ values
   (10, 'Active', 'Paid'),
   (12, 'Deactive', 'Not Paid');
 
+  --Exam
+insert into Exam (StudentID, Examdate, ExamTime, NumTimeAttended, SeatNo, HallNo, ModuleID)
+values
+  (1, '2024-01-15', '09:00 AM', 3, null, null, 1),
+  (2, '2024-01-16', '02:00 PM', 3, null, null, 2),
+  (4, '2024-01-17', '11:00 AM', 3, null, null, 3),
+  (7, '2024-01-18', '10:00 AM', 3, null, null, 4),
+  (8, '2024-01-19', '01:00 PM', null, 13, 'Hall5', 5),
+  (9, '2024-01-20', '03:00 PM', null, 20, 'Hall6', 6),
+  (10, '2024-01-21', '12:00 PM', null, 60, 'Hall7', 7),
+  (12, '2024-01-22', '04:00 PM', null, 40, 'Hall8', 8),
+  (11, '2024-01-23', '02:30 PM', null, 63, 'Hall9', 9),
+  (13, '2024-01-24', '09:30 AM', null, 24, 'Hall10', 10);
+
+
 
