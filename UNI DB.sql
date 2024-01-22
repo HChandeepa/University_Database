@@ -507,3 +507,24 @@ as
 begin
 	select Name,NIC,Address,DOB,Email from Student
 	end;
+
+create trigger student_update
+on Student after update
+as
+begin
+	select StudentID,Name,NIC,Address,DOB,Email from Student
+	end;
+
+CREATE FUNCTION Find_Name (@id int)
+RETURNS varchar(50)
+AS  
+BEGIN
+    DECLARE @name varchar(50)
+    
+    SELECT @name = Name 
+    FROM student
+    WHERE StudentID = @id
+
+    RETURN @name
+END
+
