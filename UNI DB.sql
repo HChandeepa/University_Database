@@ -248,7 +248,7 @@ VALUES
 (17, 'Carter Anderson', 'carter.anderson@example.com', 'password17'),
 (18, 'Aria Martinez', 'aria.martinez@example.com', 'password18'),
 (19, 'Lucas Smith', 'lucas.smith@example.com', 'password19'),
-(20, 'Isabella Davis', 'isabella.davis@example.com', 'password20');
+(20, 'Isabella Davis', 'isabella.davis@example.com',ï¿½'password20');
 
 --Lecturer
 insert into Lecturer
@@ -264,7 +264,7 @@ values
   (9, 'Ph.D. in Economics', 9),
   (10, 'M.Sc. in Computer Networks', 10),
   (11, 'Ph.D. in Data Science', 1),
-  (12, 'M.Sc. in Information Technology', 2);
+  (12, 'M.Sc. in Information Technology',ï¿½2);
 
   --Person_Access
 insert into PersonAccess
@@ -276,7 +276,7 @@ values
   (10, 5, '2024-01-14 13:00:00'), 
   (8, 6, '2024-01-14 14:15:00'), 
   (7, 7, '2024-01-14 15:30:00'), 
-  (9, 8, '2024-01-14 16:45:00');
+  (9, 8, '2024-01-14ï¿½16:45:00');
 
   --Admin
 insert into Admin
@@ -290,8 +290,8 @@ values
   (16, 3),
   (17, 0),
   (18, 2),
-  (19, 0),
-  (20, 2);
+  (19,ï¿½0),
+ï¿½ï¿½(20,ï¿½2);
 
 --Module
 INSERT INTO Module
@@ -359,7 +359,7 @@ values
   (8, 'Active', 'Paid'),
   (9, 'Deactive', 'Not Paid'),
   (10, 'Active', 'Paid'),
-  (12, 'Deactive', 'Not Paid');
+  (12, 'Deactive',ï¿½'Notï¿½Paid');
 
   --Exam
 insert into Exam (StudentID, Examdate, ExamTime, NumTimeAttended, SeatNo, HallNo, ModuleID)
@@ -373,7 +373,7 @@ values
   (10, '2024-01-21', '12:00 PM', null, 60, 'Hall7', 7),
   (12, '2024-01-22', '04:00 PM', null, 40, 'Hall8', 8),
   (11, '2024-01-23', '02:30 PM', null, 63, 'Hall9', 9),
-  (13, '2024-01-24', '09:30 AM', null, 24, 'Hall10', 10);
+  (13, '2024-01-24', '09:30 AM', null, 24, 'Hall10',ï¿½10);
 
   --Attendence
 INSERT INTO Attendence
@@ -438,7 +438,7 @@ values
   (7, '2024-01-31', 900.00, null, 3, 'Cash', 12),
   (8, '2024-02-01', 650.00, null, 2, 'Cash', 13),
   (9, '2024-02-02', 700.00, null, 4, 'Cash', 9),
-  (10, '2024-02-03', 850.00, null, 5, 'Cash', 10);
+  (10, '2024-02-03', 850.00, null, 5, 'Cash',ï¿½10);
 
 
 
@@ -525,8 +525,9 @@ BEGIN
     FROM student
     WHERE StudentID = @id
 
-    RETURN @name
+    RETURNï¿½@name
 END
+
 
 CREATE FUNCTION dbo.GetTotalAmountPaid(@Stud_id INT)
 RETURNS MONEY
@@ -538,6 +539,7 @@ BEGIN
     WHERE StudentID = @Stud_id
     RETURN @TotalAmount
 END;
+
 
 
  create view studentPay
