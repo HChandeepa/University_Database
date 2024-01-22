@@ -528,4 +528,17 @@ BEGIN
     RETURN @name
 END
 
+<<<<<<< HEAD
+CREATE FUNCTION dbo.GetTotalAmountPaid(@Stud_id INT)
+RETURNS MONEY
+AS
+BEGIN
+    DECLARE @TotalAmount MONEY
+    SELECT @TotalAmount = SUM(Amount)
+    FROM Payment
+    WHERE StudentID = @Stud_id
+    RETURN @TotalAmount
+END;
+=======
+>>>>>>> 5241fefadb64c066e5ed34f4f8161fe478e1b614
 
