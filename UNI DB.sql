@@ -500,3 +500,10 @@ as
 begin
 	select StudentID,Name,NIC,Address,DOB,Email from Student
 	end;
+
+	create trigger student_insert
+on Student after insert
+as
+begin
+	select Name,NIC,Address,DOB,Email from Student
+	end;
