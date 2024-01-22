@@ -129,4 +129,14 @@ Primary key(TransID),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
 
+create table Result(
+StudentID int not null,
+ModuleID int not null,
+Mark float,
+EmpID int,
+Primary key(StudentID,ModuleID),
+Foreign key(ModuleID)REFERENCES Module(ModuleID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(EmpID)REFERENCES Lecturer(EmpID)
+);
 
