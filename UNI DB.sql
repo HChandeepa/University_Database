@@ -156,3 +156,12 @@ Primary key(ExamID),
 Foreign key(ModuleID)REFERENCES Module(ModuleID),
 Foreign key(EmpID)REFERENCES Person(EmpID)
 );
+
+create table ExamStudentAllocation(
+ExamID int not null,
+StudentID int not null,
+Participation int,
+Primary key(ExamID,StudentID),
+Foreign key(StudentID)REFERENCES Student(StudentID),
+Foreign key(ExamID)REFERENCES ExamAllocation(ExamID)
+);
