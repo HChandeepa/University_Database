@@ -404,5 +404,18 @@ INSERT INTO ExamAllocation (ExamID, ModuleID, EmpID) VALUES
 (9, 9, 6),
 (10, 10, 13);
 
+--ExamStudentAllocation
+INSERT INTO ExamStudentAllocation (ExamID, StudentID, Participation) VALUES
+(1, 1, 1),
+(1, 2, 1),
+(1, 4, 0),
+(2, 4, 1),
+(2, 7, 1),
+(2, 8, 0),
+(3, 7, 1),
+(3, 8, 1),
+(3, 9, 0),
+(4, 10, 1);
+
 
 
