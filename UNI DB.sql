@@ -190,3 +190,10 @@ values('200018500132','Kamal','Colombo 07','2000/12/03','kamal@gmail.com','22446
 	  ('200176558246','Sadun','18/2 Kasbswa','2001/08/19','Sadun@gmail.com','1234567'),
 	  ('200349853454','Oshara','Colombo 07','2003/11/01','Oshara@gmail.com','298246');
 
+--Faculty
+insert into Faculty 
+values('FOC','Faculty of Computing'),
+	  ('FOB','Faculty of Business'),
+	  ('FOE','Faculty of Engineering'),
+	  ('FOS','Faculty of Science'),
+	  ('FOP','Faculty of Postgraduate Studies');
