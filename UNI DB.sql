@@ -249,3 +249,31 @@ VALUES
 (18, 'Aria Martinez', 'aria.martinez@example.com', 'password18'),
 (19, 'Lucas Smith', 'lucas.smith@example.com', 'password19'),
 (20, 'Isabella Davis', 'isabella.davis@example.com', 'password20');
+
+--Lecturer
+insert into Lecturer
+values
+  (1, 'Ph.D. in Computer Science', 1),
+  (2, 'M.Sc. in Electrical Engineering', 2),
+  (3, 'Ph.D. in Psychology', 3),
+  (4, 'M.A. in English Literature', 4),
+  (5, 'Ph.D. in Business Administration', 5),
+  (6, 'M.Sc. in Physics', 6),
+  (7, 'Ph.D. in Mechanical Engineering', 7),
+  (8, 'M.A. in Sociology', 8),
+  (9, 'Ph.D. in Economics', 9),
+  (10, 'M.Sc. in Computer Networks', 10),
+  (11, 'Ph.D. in Data Science', 1),
+  (12, 'M.Sc. in Information Technology', 2);
+
+  --Person_Access
+insert into PersonAccess
+values
+  (2, 1, '2024-01-14 08:00:00'), 
+  (1, 2, '2024-01-14 09:15:00'), 
+  (4, 3, '2024-01-14 10:30:00'), 
+  (12, 4, '2024-01-14 11:45:00'), 
+  (10, 5, '2024-01-14 13:00:00'), 
+  (8, 6, '2024-01-14 14:15:00'), 
+  (7, 7, '2024-01-14 15:30:00'), 
+  (9, 8, '2024-01-14 16:45:00');
