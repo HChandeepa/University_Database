@@ -179,3 +179,14 @@ Foreign key(ModuleID)REFERENCES Module(ModuleID),
 Foreign key(StudentID)REFERENCES Student(StudentID)
 );
 
+--Student
+insert into Student 
+values('200018500132','Kamal','Colombo 07','2000/12/03','kamal@gmail.com','224466'),
+	  ('200224350132','Chaminda','07/2 Maharagama, Pannipitiya','2002/05/20','Chaminda@gmail.com','467823'),
+	  ('200468210132','Sunil','Colombo 05','2004/02/04','Sunil@gmail.com','33465'),
+	  ('200114625125','Supun','542/D Kaluthara','2001/10/13','Supun@gmail.com','2468'),
+	  ('200246782546','Manel','12/A Mathara','2002/06/07','Manel@gmail.com','2244'),
+	  ('200046821654','Tharushi','Colombo 07','2000/04/14','Tharushi@gmail.com','33166'),
+	  ('200176558246','Sadun','18/2 Kasbswa','2001/08/19','Sadun@gmail.com','1234567'),
+	  ('200349853454','Oshara','Colombo 07','2003/11/01','Oshara@gmail.com','298246');
+
