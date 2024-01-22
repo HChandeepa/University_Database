@@ -235,3 +235,17 @@ VALUES(4, 'Johan', '1234567890', 'Father'),
 	  (10, 'Manoja', '5551234567', 'Mother'),
   	  (8, 'Nayana', '7778889999', 'Mother'),
 	  (13, 'Dhanidu', '4445556666', 'Father');
+
+--Person
+INSERT INTO Person
+VALUES
+(11, 'Sophia Davis', 'sophia.davis@example.com', 'password11'),
+(12, 'Liam Wilson', 'liam.wilson@example.com', 'password12'),
+(13, 'Emma Brown', 'emma.brown@example.com', 'password13'),
+(14, 'Mia Johnson', 'mia.johnson@example.com', 'password14'),
+(15, 'Aiden Taylor', 'aiden.taylor@example.com', 'password15'),
+(16, 'Ella White', 'ella.white@example.com', 'password16'),
+(17, 'Carter Anderson', 'carter.anderson@example.com', 'password17'),
+(18, 'Aria Martinez', 'aria.martinez@example.com', 'password18'),
+(19, 'Lucas Smith', 'lucas.smith@example.com', 'password19'),
+(20, 'Isabella Davis', 'isabella.davis@example.com', 'password20');
