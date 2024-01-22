@@ -454,3 +454,25 @@ insert into Student(NIC,name,Address,DOB,Email,Password)
 values(@nic,@name,@address,@dob,@email,@password);
 
 end;
+
+GO
+/****** Object:  StoredProcedure [dbo].[AddNewStudent]    Script Date: 13/01/2024 9:55:41 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[AddNewStudent](
+
+@nic varchar(255),
+@name varchar(255),
+@address varchar(255),
+@dob varchar(255),
+@email varchar(255),
+@password varchar(255)
+) AS
+begin
+
+insert into Student(NIC,name,Address,DOB,Email,Password)
+values(@nic,@name,@address,@dob,@email,@password);
+
+end;
